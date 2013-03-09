@@ -2,13 +2,13 @@
   (:use training-day
         midje.sweet))
 
-(facts "answer"
+(facts "5 answer"
        answer => 42)
 
-(facts "square"
+(facts "6 square"
   (square 2) => 4
   (square 3) => 9)
 
-(facts "average"
+(facts " 7 average"
   (average 2 4) => 3
   (average 1 2) => 3/2)
