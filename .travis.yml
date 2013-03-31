@@ -4,3 +4,5 @@ script: lein midje
 jdk:
   - openjdk7
   - openjdk6
+notifications:
+  email: false
