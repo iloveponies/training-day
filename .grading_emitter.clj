@@ -2,6 +2,7 @@
   (:require [midje.emission.plugins.util :as util]
             [midje.data.fact :as fact]
             [midje.emission.plugins.silence :as silence]
+            [midje.emission.plugins.default :as default]
             [midje.emission.state :as state]))
 
 (def failures (atom 0))
@@ -29,6 +30,7 @@
      (util/emit-one-line (format "%d points in total" @points-counter))))
 
 (state/install-emission-map (assoc silence/emission-map
+                              :fail (:fail default/emission-map)
                               :starting-to-check-top-level-fact
                               starting-to-check-top-level-fact
                               :finishing-top-level-fact
