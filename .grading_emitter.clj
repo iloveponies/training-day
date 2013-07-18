@@ -14,7 +14,7 @@
   (let [points (:points (meta fact))
         exercise (:exercise (meta fact))]
     (if (= (state/output-counters:midje-failures) @failures)
-      (do (util/emit-one-line (format "%d points from exercise %d"
+      (do (util/emit-one-line (format "%d point(s) from exercise %d"
                                       points
                                       exercise))
           (swap! points-counter (partial + points)))
@@ -29,6 +29,11 @@
      (util/emit-one-line (format "%d points in total" @points-counter))))
 
 (state/install-emission-map (assoc silence/emission-map
-                              :finishing-top-level-fact finishing-top-level-fact
-                              :starting-fact-stream starting-fact-stream
-                              :finishing-fact-stream finishing-fact-stream))
+                              :starting-to-check-top-level-fact
+                              starting-to-check-top-level-fact
+                              :finishing-top-level-fact
+                              finishing-top-level-fact
+                              :starting-fact-stream
+                              starting-fact-stream
+                              :finishing-fact-stream
+                              finishing-fact-stream))
