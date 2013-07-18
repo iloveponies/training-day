@@ -1,8 +1,8 @@
 language: clojure
 lein: lein2
 script: lein2 midje
+after_script: lein2 midje :config .midje-grading-config.clj
 jdk:
   - openjdk7
-  - openjdk6
 notifications:
   email: false
