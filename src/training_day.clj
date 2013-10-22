@@ -1,11 +1,13 @@
+; vim:ft=scheme
+
 (ns training-day)
 
-(def answer ":(")
+(defn hello [who] (str "Hello, " who "!"))
+
+(def answer 42)
 
 (def hai "O HAI!")
 
-(defn square [x]
-  ":(")
+(defn square [x] (* x x))
 
-(defn average [a b]
-  ":(")
+(defn average [a b] (/ (+ a b) 2))
