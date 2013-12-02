@@ -12,4 +12,4 @@
 
 
 (square 4)
-(average 10 2)
+(average 1 3)
