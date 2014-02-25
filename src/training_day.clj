@@ -9,10 +9,3 @@
 
 (defn average [a b]
   (/ (+ a b) 2))
-
-(get "Clojure" 2)
-
-(defn hello [who] (str "Hello, " who "!"))
-
-(hello "who")
-
