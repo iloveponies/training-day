@@ -8,3 +8,5 @@
 /checkouts
 /.lein-deps-sum
 /.lein-plugins
+.idea/
+*.iml
