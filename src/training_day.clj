@@ -4,13 +4,13 @@
 
 (def hai "O HAI!")
 
-(defn 
+(defn
     square 
     [x]
     (* x x))
 
 
-(defn 
+(defn
     average 
     [a b]
     (/ (+ a b) 2))
