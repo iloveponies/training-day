@@ -1,0 +1,5 @@
+(defn square [x] (* x x))
+(square 10)
+(defn average [a b] (/ (+ a b) 2))
+(average 10 20)
+(/ 10 3)
