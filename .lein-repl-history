@@ -1,0 +1,8 @@
+(use 'training-day)
+(square 2)
+(use 'training-day)
+answer
+(use 'training-day)
+answer
+(use 'training-day)
+answer
