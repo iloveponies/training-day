@@ -1,0 +1,3 @@
+(use 'clojure.repl)
+(doc +)
+(user/clojuredocs min)
