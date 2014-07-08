@@ -1,0 +1,8 @@
+language: clojure
+lein: lein2
+script: lein2 midje :config .midje-grading-config.clj
+jdk:
+  - openjdk7
+notifications:
+  email: false
+  webhooks: http://polar-hollows-8825.herokuapp.com/notifications
