@@ -1,6 +1,6 @@
 (ns training-day)
 
-(def answer ":(")
+(def answer (fn [] (str 42)))
 
 (def hai "O HAI!")
 
