@@ -1,0 +1,6 @@
+(user/clojuredocs min)
+(use 'clojure.repl)
+(user/clojuredocs min)
+(doc +)
+(user/clojuredocs min)
+exit
