@@ -1,0 +1,31 @@
+(+ 2 3)
+(+ 2 3) ;=>
+exit
+(+ (* 2 3) 4)
+exit
+answer
+(use 'training-day)
+answer
+(hello Toffe)
+hello
+hello "Toffe"
+(hello "Toffe")
+(use 'training-day)
+(hello "Toffe")
+hello Toffe
+(hello Toffe)
+hello
+lein run
+exit
+(in-ns 'training-day)
+ls
+hello
+answer
+exit
+(use 'training-day)
+answer
+hello
+hello Toffe
+hello "Toffe"
+hai
+exit
