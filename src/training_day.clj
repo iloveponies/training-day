@@ -11,6 +11,9 @@
 	(/ (+ a b) 2))
 
 
+(defn hello1 [who] "Hello again, " who "!")
+(defn hello2 [who] "Hello hello, " who "!")
+
 (defn
 	hello
 	"Gives out personalized greetings."
