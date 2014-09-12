@@ -49,8 +49,8 @@
     (if (== (mod a_year 100) 0) ;Make sure it isn't divisible by 100
       (if (== (mod a_year 400) 0)
         true  ;A leap year if divisible by 400
-        false)
-      true
-      ) ;Divisible by 100 but not by 400 so not a leap year
+        false) ;Divisible by 100 but not by 400 so not a leap year
+      true ;Divisible by 4 but not by 100
+      )
     false)
   )
