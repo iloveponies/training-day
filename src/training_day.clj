@@ -4,10 +4,10 @@
 
 (def hai "O HAI!")
 
-(def square [x]
+(defn square [x]
   (* x x))
 
-(def average [a b]
+(defn average [a b]
   (/ (+ a b) 2))
 
 (def hello "hello")
