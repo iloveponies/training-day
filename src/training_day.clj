@@ -8,6 +8,3 @@
 
 (defn average [a b]
   (/ (+ a b ) 2))
-
-(square 6)
-(average 1 2)
