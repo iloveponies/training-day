@@ -4,7 +4,7 @@
 
 (def hai "O HAI!")
 
-(defn square "Square of a given int" [x]
+(defn square "Square of a given number" [x]
   (* x x))
 
 (defn average [a b]
