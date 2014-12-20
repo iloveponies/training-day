@@ -1,0 +1,14 @@
+(str "Over " 9000 "!")
+(+ (* 2 3) 4)
+(+ 3 4 5 6)
+(get "abrakadabra" 0)
+((fn [who] (str "Hello, " who "!")) "Verna")
+(get 'trainning-day)
+(use 'training-day)
+answer
+(use 'training-day)
+hai
+(square 2)
+(use 'training-day)
+(square 2)
+(average 2 4)
