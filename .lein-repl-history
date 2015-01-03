@@ -1,0 +1,6 @@
+(use 'training-day)
+(square 7)
+(answer)
+(average 3 3)
+(average 4 8)
+exit
