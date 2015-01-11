@@ -1,11 +1,15 @@
 (ns training-day)
 
-(def answer ":(")
+(def answer 42)
 
 (def hai "O HAI!")
 
-(defn square [x]
-  ":(")
+(defn square
+  "Multiplies a value by itself"
+  [x]
+  (* x x))
 
-(defn average [a b]
-  ":(")
+(defn average
+  "Averages the provided values"
+  [a b]
+  (/ (+ a b) 2))
