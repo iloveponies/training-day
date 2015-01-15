@@ -1,0 +1,4 @@
+(use 'training-day)
+hai
+(square 2)
+quit
