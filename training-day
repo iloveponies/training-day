@@ -1,0 +1,18 @@
+;; Anything you type in here will be executed
+;; immediately with the results shown on the
+;; right.
+(+ 2 3)
+(use 'training-day)
+(square 7)
+(square  4)
+(* 4 4)
+(square 4)
+(+ 4 (* 2 3) )
+(+ 3 4 5 6 )
+(get "hpohoo" 4)
+((fn [who] (str "Hello, " who "!")) "efw")
+
+(square 3)
+(use 'training-day)
+(square 3)
+(square 3)
