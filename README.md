@@ -6,4 +6,4 @@ I'm part of the [120 hour epic sax marathon](http://iloveponies.github.com/120-h
 
 ## Usage
 
-Tehtävät 6/6 tehty.
+Tehtävät 4/4 tehty.
