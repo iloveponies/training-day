@@ -1,11 +1,17 @@
 (ns training-day)
 
-(def answer ":(")
+(def answer (int 42))
 
 (def hai "O HAI!")
 
-(defn square [x]
-  ":(")
+(defn
+  square
+  "Squares!"
+  [x]
+  (* x x))
 
-(defn average [a b]
-  ":(")
+(defn
+  average
+  "Calculates the average of its two parameters"
+  [a b]
+  (/ (+ a b) 2))
