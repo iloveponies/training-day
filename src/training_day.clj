@@ -10,3 +10,7 @@
 (defn average [a b]
   (/ (+ a b) 2))
 
+(defn dub [f x]
+  (f (f x)))
+
+
