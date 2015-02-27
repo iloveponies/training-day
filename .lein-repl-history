@@ -1,0 +1,40 @@
+(+ 1 2)
+(+ 3 4) => 7
+(+ 3 4) ;=> 7
+(+ 3 4) ;=> 3
+(* 2 3)
+(* 2 3)(+ 4)
+(+ 4 (* 2 3)) 
+(+ 3 4 5 6)
++
+(get Clojure 2)
+(get "Clojure" 2)
+user=> 
+user=> (fn [who] (str "Hello, " who "!"))
+user=> 
+user=>(fn [who] (str "Hello, " who "!"))
+(fn [who] (str "Hello, " who "!"))
+((fn [who] (str "Hello, " who "!")) "Jani") ;=> "Hello, Jani!"
+(def hello (fn [who] (str "Hello, " who "!")))
+(hello "beautiful!")
+(use 'training-day)
+hai
+use square 5
+use square 3
+use square 2
+square 2
+(square 2)
+(use 'training-day)
+(square 2)
+(use 'training-day)
+(square 2)
+(use 'training-day :reload)
+(square 2)
+(use 'training-day :reload)
+(average 2 4)
+(average 5 7)
+(use 'training-day :reload)
+(average 5 7)
+(use 'training-day :reload)
+(average 5 7)
+(average 7 12)
