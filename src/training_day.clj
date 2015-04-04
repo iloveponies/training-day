@@ -1,6 +1,6 @@
 (ns training-day)
 
-(def answer [aswer] (str aswer))
+(def answer 42)
 
 (def hai "O HAI!")
 
