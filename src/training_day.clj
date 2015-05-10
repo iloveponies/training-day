@@ -1,11 +1,19 @@
 (ns training-day)
 
-(def answer ":(")
+(def answer 42)
 
 (def hai "O HAI!")
 
-(defn square [x]
-  ":(")
+(defn
+  square
+  "neliofunktio"
+  [x]
+  (* x x)
+)
 
-(defn average [a b]
-  ":(")
+(defn
+  average
+  "laskee kahden luvun keskiarvon"
+  [a b]
+  (/ (+ a b) 2)
+)
