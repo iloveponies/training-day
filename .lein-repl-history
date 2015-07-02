@@ -1,0 +1,27 @@
+answer
+ls
+answer
+(use 'training-day)
+hai
+(use 'training-day)
+answer
+(use 'training-day)
+answer
+square 7
+hai
+square 7
+(* 42 7)
+square 2
+average 2 3
+average 2 2
+hai
+average (2 2)
+(average 2 4)
+(square 2)
+(square 9(
+square 9)
+(use 'training-day)
+hai
+(square 3)
+(average 2 4)
+(average 3 8)
