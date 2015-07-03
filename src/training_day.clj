@@ -7,5 +7,5 @@
 (defn square [x]
   (* x x))
 
-(defn average [a b]
-  (/ (+ a b) 2))
+(defn average "Supa'-bad averager!" [& nums]
+  (/ (reduce + nums) (count nums)))
