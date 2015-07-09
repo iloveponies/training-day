@@ -1,0 +1,23 @@
+(+ (* 2 3) 4)
+(+ 3 4 5 6)
++
+(+)
+(get "Clojure" 2)
+(println \o)
+(println \o \l \e)
+(println \o\l\e)
+(println \o \l \e)
+(get "abrakadabra" 1)
+(get "abrakadabra" 0)
+(fn [who] (str "Hello, " who " !"))
+((fn [who] (str "Hello, " who " !")) 'World')
+((fn [who] (str "Hello, " who " !")) "World")
+exit
+(doc +)
+(doc str)
+(user/clojuredocs min)
+(use 'training-day)
+exit
+(use 'training-day)
+hai
+exit
