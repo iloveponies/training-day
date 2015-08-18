@@ -9,8 +9,3 @@
 
 (defn average [a b]
    (/ (+ a b) 2))
-
-(defn myAwesomeFunc
-  "This function just answers everything"
-  [answer]
-  (str answer))
