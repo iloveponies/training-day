@@ -1,0 +1,17 @@
+((* 2 3) + 4)
+(+ 4 (* 2 3))
+(+ 3 4 5 6)
++
+(get "Closure" 1)
+(get "abrakadabra" 0)
+(fn [who] (str "Hello, " who "!"))
+((fn [who] (str "Hello, " who "!")) "Jani")
+((fn [name] (str "Welcome to Rivendell mr " name)) "Nikola")
+(def hello (fn [who] (str "Hello, " who "!")))
+(hello "Nikola")
+exit
+(use 'training-day)
+hai
+(square 4)
+lein midje :autotest
+exit
