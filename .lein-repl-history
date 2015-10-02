@@ -1,0 +1,11 @@
+(str 120934781234)
+(str "Over " 9000 "!")
+(take 20 (cycle["foo " "bar"]))
++
+=
+*
+-
+exit
++
+(get "Clojure" 2)
+(get "abrakadabra" 0)
