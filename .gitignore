@@ -10,3 +10,4 @@
 /.lein-plugins
 .nrepl-port
 .lein-repl-history
+*.swp
