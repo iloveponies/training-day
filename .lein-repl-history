@@ -1,0 +1,12 @@
+(+ 3 4)
+(str text me good)
+(str 123 999 789)
+(+ 4 (* 2 3))
+(+ 3 4 5 6)
+(get "Clojure" 2 3)
+(get "Clojure" 2 2)
+(get "Clojure" 2 3333)
+(get "Clojure" 2 "Test" 1)
+(get "Clojure")
+(get "Clojure" 0)
+exit
