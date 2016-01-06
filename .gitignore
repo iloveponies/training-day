@@ -8,3 +8,6 @@
 /checkouts
 /.lein-deps-sum
 /.lein-plugins
+.idea/*
+.lein-repl-history
+*.iml
