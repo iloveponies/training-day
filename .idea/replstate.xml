@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ReplState" timestamp="1461314410702">{:repl-history {:ide [], :local [&quot;(+ 1 2 3)                                                   ;&quot; &quot;(+ 1 2 3)&quot; &quot;hello&quot; &quot;(defn hello [who] (str \&quot;Hello\&quot; [who]))&quot; &quot;hello [\&quot;jansu\&quot;]&quot; &quot;(use training-day)&quot; &quot;nelio [10]&quot; &quot;(nelio [10])&quot; &quot;(defn nelio [x] (* x x))&quot; &quot;nelio&quot; &quot;nelio [5]&quot; &quot;nelio (5)&quot; &quot;(nelio [6])&quot; &quot;(-&gt; nelio)&quot; &quot;(nelio 6)&quot; &quot;(square 5)&quot; &quot;(defn square [x] (* x x))&quot; &quot;(average 5 5)&quot; &quot;(use 'training-day)&quot;], :remote []}}</component>
-</project>
