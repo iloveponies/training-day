@@ -1,0 +1,2 @@
+(use 'training-day :reload-all)
+(average 5 4)
