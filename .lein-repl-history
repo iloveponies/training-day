@@ -1,0 +1,27 @@
++
+(get "clojure" 2)
+(get "clojure" 1)
+(get "clojure" 0)
+(fn [who] (str "Hello, " who "!"))
+((fn [who] (str "Hello, " who "!")) "Jani")
+((fn [who] (str "Hello, " who "!")) "World!")
+(defn)
+(def hello (fn [who] (str "Hello, " who "!")))
+(hello "man")
+(doc +)
+(use 'training-day)
+(answer)
+answer
+hai
+(square 3)
+(use 'training-day)
+(square 3)
+(use 'training-day)
+(defn average [a b]
+  (/ (+ a b) 2))
+(defn average [a b] (/ (+ a b) 2))
+(defn averag [a b] (/ (+ a b) 2))
+(averag 3 2)
+(averag 10 2)
+>)
+ls
