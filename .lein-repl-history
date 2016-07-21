@@ -1,3 +1,6 @@
 (+ 4 (* 2 3))
+<<<<<<< HEAD
 (+ 3 4 5 6)
 (get "abrakadabra" 1)
+=======
+>>>>>>> parent of e42a048... Exercise 2
