@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Training day</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="css/base.css">
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="js/exercise-list.js"></script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="index.html">← index</a>
+      </li>
+      <li>
+        <button type="button"
+                class="btn btn-default navbar-btn"
+                data-toggle="collapse" data-target="#exercise-list">
+          Exercises
+        </button>
+      </li>
+      <li>
+        <ul id="exercise-list" class="collapse navbar-text list-inline">
+        </ul>
+      </li>
+  </div>
+</nav>
+<div class="container">
+  <div class="main-content">
+<header>
+<h1 class="title">Training day</h1>
+</header>
+<section id="fork-this" class="level2">
+<h2>Fork this</h2>
+<p><a href="https://github.com/iloveponies/training-day">https://github.com/iloveponies/training-day</a></p>
+<p>If you followed through the instructions in the last section of the previous chapter, you already have this repository forked, cloned and ready to go. If you missed the instructions, <a href="basic-tools.html#how-to-submit-answers-to-exercises">here</a> is a link.</p>
+</section>
+<section id="we-come-gifting-bears" class="level2">
+<h2>We come gifting bears</h2>
+<blockquote>
+<p>When in doubt, do exactly the opposite of CVS. <small>Linus Torvalds</small></p>
+</blockquote>
+<p>You should now have a directory called <code>training-day</code>. This directory contains a Leiningen project we have lovingly hand-crafted just for you. It has unit tests for the exercises, more about these in a minute. Lets first focus on the stuff inside <code>src</code>.</p>
+<p>If you are using Light Table and you followed the instructions from the last chapter, you should have an Instarepl open for the <code>training-day</code> project. If you don’t, now is a good time to go through those instructions.</p>
+<p>If you are using some other editor, just open the file <code>src/training_day.clj</code>.</p>
+<p>Inside the file <code>src/training-day.clj</code> are stubs for all the exercises that require coding. For example this stub:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">defn</span><span class="fu"> square </span>[n]
+  <span class="st">&quot;:(&quot;</span>)</code></pre>
+<p>When you are solving the exercises, you are to modify these stubs and run the tests to see if you got it right.</p>
+</section>
+<section id="testing-testing-1-2-3" class="level2">
+<h2>Testing, testing, 1 2 3</h2>
+<p>Speaking of testing, let’s run the unit tests now. This will output a <em>lot</em> of somewhat superfluous information while Leiningen downloads the project dependencies, so you will see more output printed than what is shown below. This output is printed only once, so subsequent runs will not be so chatty.</p>
+<pre><code>me@my-computer:~$ cd training-day/
+me@my-computer:~/training-day$ lein midje</code></pre>
+<p>Leiningen tells us it’s downloading the whole internet:</p>
+<pre><code>Could not find metadata lein-midje:lein-midje:2.0.0-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Retrieving lein-midje/lein-midje/2.0.0-SNAPSHOT/maven-metadata.xml (1k)
+    from http://clojars.org/repo/
+…Skip…</code></pre>
+<p>And finally, the output we are interested in:</p>
+<pre><code>FAIL &quot;answer&quot; at (training_day_test.clj:6)
+    Expected: 42
+      Actual: &quot;:(&quot;
+
+FAIL &quot;square&quot; at (training_day_test.clj:9)
+    Expected: 4
+      Actual: &quot;:(&quot;
+
+FAIL &quot;square&quot; at (training_day_test.clj:10)
+    Expected: 9
+      Actual: &quot;:(&quot;
+
+FAIL &quot;average&quot; at (training_day_test.clj:13)
+    Expected: 3
+      Actual: &quot;:(&quot;
+
+FAIL &quot;average&quot; at (training_day_test.clj:14)
+    Expected: 3/2
+      Actual: &quot;:(&quot;
+FAILURE: 5 facts were not confirmed.</code></pre>
+<p>This tells us that all the test failed. Which was expected, as you haven’t done any of the exercises yet.</p>
+<p>Our project uses the <a href="https://github.com/marick/Midje">Midje</a> testing library. To ease distributing changes to the tests, the actual test code is in a separate project. The easiest way to look at the code is to use Github. For every chapter there is a repository with the same name and a “-tests” suffix. This repository is where the tests live. Here’s a link to the <a href="https://github.com/iloveponies/training-day-tests/blob/master/src/iloveponies/tests/training_day.clj">file</a> containing the tests for this chapter. Just click it. In the file are blocks of code that look like this:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(facts <span class="st">&quot;square&quot;</span>
+  (square <span class="dv">2</span>) =&gt; <span class="dv">4</span>
+  (square <span class="dv">3</span>) =&gt; <span class="dv">9</span>)</code></pre>
+<p>The <code>facts</code> form declares some facts of the <code>square</code> function. A fact, in Midje, is an expression <code>expr =&gt; expected-value</code>, saying “Evaluating <code>expr</code> should return <code>expected-value</code>”. Our two tests (or facts) say that <code>(square 2)</code> should return <code>4</code> and <code>(square 3)</code> should return 9.</p>
+<p>Our stub for <code>square</code> simply returns the string <code>&quot;:(&quot;</code> for all values of <code>n</code>. This does not pass the tests, which we saw above. The relevant output was:</p>
+<pre><code>FAIL &quot;square&quot; at (training_day_test.clj:9)
+    Expected: 4
+      Actual: &quot;:(&quot;
+
+FAIL &quot;square&quot; at (training_day_test.clj:10)
+    Expected: 9
+      Actual: &quot;:(&quot;</code></pre>
+<p>The <code>FAIL</code> lines indicate that our stub function fails the tests as expected, because the string <code>&quot;:(&quot;</code> is not <code>4</code> or <code>9</code>.</p>
+<p>Run <code>lein midje</code> often to see if your code is working or not. You can also run <code>lein midje :autotest</code> to start a loop that runs the tests every time you make changes to the code.</p>
+</section>
+<section id="interactive-clojure" class="level2">
+<h2>Interactive Clojure</h2>
+<p>One of the nice features of Clojure is the REPL. It is an interactive session in which you can write code and see it executed immediately. Here you have two choices. Light Table has a really nice REPL called Instarepl, and Leiningen provides the classical REPL. We encourage you to test out Instarepl even once. It’s pretty awsome.</p>
+<section id="light-table" class="level3">
+<h3>Light Table</h3>
+<p>Follow the installation instructions found in the previous chapter if you haven’t already. In Linux, you run the file <code>LightTable</code> as you would run any binary. The previous chapter has instructions for opening an instarepl.</p>
+</section>
+<section id="good-ol-repl" class="level3">
+<h3>Good ol’ repl</h3>
+<p>If you don’t want to use Light Table, there is always the <code>lein repl</code>. Issue that command in the terminal and an interactive Clojure session starts. It should look like this:</p>
+<pre><code>me@my-computer:~$ lein repl
+nREPL server started on port 50443
+Welcome to REPL-y!
+Clojure 1.5.0
+    Exit: Control+D or (exit) or (quit)
+Commands: (user/help)
+    Docs: (doc function-name-here)
+          (find-doc &quot;part-of-name-here&quot;)
+  Source: (source function-name-here)
+          (user/sourcery function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+Examples from clojuredocs.org: [clojuredocs or cdoc]
+          (user/clojuredocs name-here)
+          (user/clojuredocs &quot;ns-here&quot; &quot;name-here&quot;)
+user=&gt;</code></pre>
+<p>If you type <code>(+ 1 2)</code> and press the return key, you should see this:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">user=&gt; (<span class="kw">+</span> <span class="dv">1</span> <span class="dv">2</span>)
+<span class="dv">3</span>
+user=&gt;</code></pre>
+<p>Clojure evaluated the expression <code>(+ 1 2)</code> and printed its value, <code>3</code>. If you see something different, please let us know by raising your hand.</p>
+</section>
+</section>
+<section id="notation" class="level2">
+<h2>Notation</h2>
+<p>In our example code, we often want to show the result of an expression when it is evaluated. Instead of showing what evaluating the expression in the interactive session looks like:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">user=&gt; (<span class="kw">+</span> <span class="dv">3</span> <span class="dv">4</span>)
+<span class="dv">7</span></code></pre>
+<p>We’re going to use the convention of writing the expression and the result, separated with <code>;=&gt;</code>. Quite like how Light Table does it. For an example:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">+</span> <span class="dv">3</span> <span class="dv">4</span>) <span class="co">;=&gt; 7</span></code></pre>
+<p>Sometimes we will put the result on a new line:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">str</span> <span class="dv">1337</span>)
+<span class="co">;=&gt; &quot;1337&quot;</span></code></pre>
+<section class="alert alert-info"><h3>
+Hint
+</h3>
+<p><code>str</code> is a function that turns its argument to a string. If given multiple arguments, it concatenates the results:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">str</span> <span class="st">&quot;Over &quot;</span> <span class="dv">9000</span> <span class="st">&quot;!&quot;</span>) <span class="co">;=&gt; &quot;Over 9000!&quot;</span></code></pre>
+</section>
+
+<p>When the resulting value is too long to display on one line, we will mark the continuation lines with a leading <code>;</code> like this:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">take</span> <span class="dv">20</span> (<span class="kw">cycle</span> [<span class="st">&quot;foo&quot;</span> <span class="st">&quot;bar&quot;</span>]))
+<span class="co">;=&gt; (&quot;foo&quot; &quot;bar&quot; &quot;foo&quot; &quot;bar&quot; &quot;foo&quot; &quot;bar&quot; &quot;foo&quot; &quot;bar&quot; &quot;foo&quot; &quot;bar&quot;</span>
+<span class="co">;    &quot;foo&quot; &quot;bar&quot; &quot;foo&quot; &quot;bar&quot; &quot;foo&quot; &quot;bar&quot; &quot;foo&quot; &quot;bar&quot; &quot;foo&quot; &quot;bar&quot;)</span></code></pre>
+<p><code>;</code> starts a comment that lasts until the end of that line, like <code>//</code> in Java. The <code>=&gt;</code> inside the comment is an illustration of an arrow, meaning “evaluates to”. You can copy the examples above to the REPL and they will work without modification:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">user=&gt; (<span class="kw">+</span> <span class="dv">3</span> <span class="dv">4</span>)
+<span class="dv">7</span>
+user=&gt; (<span class="kw">+</span> <span class="dv">3</span> <span class="dv">4</span>) <span class="co">;=&gt; 7</span>
+<span class="dv">7</span>
+user=&gt; (<span class="kw">+</span> <span class="dv">3</span> <span class="dv">4</span>) <span class="co">; I am a comment</span>
+<span class="dv">7</span></code></pre>
+</section>
+<section id="prefix-syntax" class="level2">
+<h2>Prefix Syntax</h2>
+<p>As you can see above, instead of writing <code>1 + 2</code> to calculate the sum of one and two, we write <code>(+ 1 2)</code>. This syntax applies everywhere in Clojure. In fact, Clojure has no operators at all. In languages such as Java or C, arithmetic operations are usually written in the mathematical notation called <em>infix form</em>. Clojure, on the other hand, uses <em>prefix form</em> for its syntax. The next table shows what mathematical expressions look like in these two syntaxes.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Java</th>
+<th style="text-align: left;">Clojure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>2 + 3</code></td>
+<td style="text-align: left;"><code>(+ 2 3)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>42 * 7</code></td>
+<td style="text-align: left;"><code>(* 42 7)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>2 - 78 * 35</code></td>
+<td style="text-align: left;"><code>(- 2 (* 78 35))</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>1 + 2 + 3 + 4</code></td>
+<td style="text-align: left;"><code>(+ 1 2 3 4)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Let’s input these definitions in our Clojure session to see how they work:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">user=&gt; (<span class="kw">+</span> <span class="dv">2</span> <span class="dv">3</span>)
+<span class="dv">5</span>
+user=&gt; (<span class="kw">*</span> <span class="dv">42</span> <span class="dv">7</span>)
+<span class="dv">294</span>
+user=&gt; (<span class="kw">-</span> <span class="dv">2</span> (<span class="kw">*</span> <span class="dv">78</span> <span class="dv">35</span>))
+-<span class="dv">2728</span>
+user=&gt; (<span class="kw">+</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span>)
+<span class="dv">10</span></code></pre>
+<section class="alert alert-success"><h3>
+Exercise 1
+</h3>
+Write the following expression in the Clojure prefix syntax: <span class="math">\((2 * 3) + 4\)</span>. Try evaluating it in the REPL. The result should be 10. This exercise does not give any points and you do not need to return it.
+</section>
+
+<section class="alert alert-success"><h3>
+Exercise 2
+</h3>
+Write the expression <span class="math">\(3 + 4 + 5 + 6\)</span> in Clojure syntax. Evaluate it in the REPL. This exercise does not give any points and you do not need to return it.
+</section>
+
+<p>The arithmetic operations have some special properties. Everyone of the operations works with only one operand.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">+</span> <span class="dv">1</span>) <span class="co">;=&gt; 1</span>
+(<span class="kw">*</span> <span class="dv">2</span>) <span class="co">;=&gt; 2</span>
+(<span class="kw">-</span> <span class="dv">3</span>) <span class="co">;=&gt; -3</span>
+(<span class="kw">/</span> <span class="dv">4</span>) <span class="co">;=&gt; 1/4</span></code></pre>
+<p>This behavior might seem odd, but here is the catch. The arithmetic operations above are, in fact, function calls. That is, <code>+</code> is actually a function (called <code>+</code>), as are <code>*</code> and <code>-</code>. Don’t believe use? Write just <code>+</code> in the REPL. In Instarepl you see</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure"><span class="kw">+</span> =&gt; <span class="kw">fn</span></code></pre>
+<p>and in <code>lein repl</code></p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">user=&gt; <span class="kw">+</span>
+#&lt;core$_PLUS_ clojure.core$_PLUS_<span class="kw">@2d21471c&gt;</span></code></pre>
+<p>They are both telling you that <code>+</code> is just a function.</p>
+<p>All function calls in Clojure look the same: <code>(function-name argument-1 argument-2 ...)</code>. As an example of a non-arithmetic function, let’s take a look at getting a single character from a string in Clojure and Java. In Clojure, we can use the <code>get</code> function for this:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">get</span> <span class="st">&quot;Clojure&quot;</span> <span class="dv">2</span>) <span class="co">;=&gt; \o</span></code></pre>
+<p>The result is the character <code>o</code>, printed in Clojure’s literal character syntax. (That is, <code>\o</code> in Clojure code means the single character <code>o</code>. In Java, you would write a literal character as <code>'o'</code>.)</p>
+<p>In Java, we reorder things a bit: the first parameter goes <em>before</em> the method name, and the parentheses are moved <em>after</em> the method name:</p>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="st">&quot;Java&quot;</span>.<span class="fu">charAt</span>(<span class="dv">2</span>); <span class="co">//=&gt; &#39;v&#39;</span></code></pre>
+<p>In Clojure, the function name always goes first, and the parameters come after it, including the object, if such is present. The Clojure syntax might take some time to get used to, but becomes natural after you’ve written a few Clojure programs.</p>
+<section class="alert alert-success"><h3>
+Exercise 3
+</h3>
+Write a Clojure expression in the REPL that, using <code>get</code>, gets the first character in the string <code>&quot;abrakadabra&quot;</code>. This exercise does not give any points and you do not need to return it.
+</section>
+
+</section>
+<section id="functions" class="level2">
+<h2>Functions</h2>
+<p>So far we’ve worked with expressions and called some existing functions. For structuring any kind of non-trivial programs, we will want to group code into our own <em>functions</em>.</p>
+<p>Lets start writing a function <code>(hello who)</code>, which returns an English greeting for the user. Functions are created with <code>fn</code>. Write the following in you REPL and evaluate it.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">fn</span> [who] (<span class="kw">str</span> <span class="st">&quot;Hello, &quot;</span> who <span class="st">&quot;!&quot;</span>))</code></pre>
+<p>The REPL should tell you that it was a function. Instarepl just says</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">fn</span> [who] (<span class="kw">str</span> <span class="st">&quot;Hello, &quot;</span> who <span class="st">&quot;!&quot;</span>)) <span class="kw">fn</span></code></pre>
+<p>As usual, <code>lein repl</code> is a bit more verbose and states</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">user=&gt; (<span class="kw">fn</span> [who] (<span class="kw">str</span> <span class="st">&quot;Hello, &quot;</span> who <span class="st">&quot;!&quot;</span>))
+#&lt;user$eval326$fn__327 user$eval326$fn__327<span class="kw">@4a2d09aa&gt;</span></code></pre>
+<p>So what kind of a function did we actually get? Inside the square brackets are the parameters of the function. This one only has a one and we gave that a name <code>who</code>. Right after that comes comes an expression, a call to a function <code>str</code> in this case. The value of this expression will become the return value of this function. In general, the return value of a function will be the value of the last expression in the function.</p>
+<p>So we got a function. Lets call it!</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">((<span class="kw">fn</span> [who] (<span class="kw">str</span> <span class="st">&quot;Hello, &quot;</span> who <span class="st">&quot;!&quot;</span>)) <span class="st">&quot;Jani&quot;</span>) <span class="co">;=&gt; &quot;Hello, Jani!&quot;</span></code></pre>
+<p>That worked just like with <code>+</code> and the others. First comes the function, then the arguments. In this case the function does not have a name so we need to write the whole definiton. We also have only one argument, <code>&quot;Jani&quot;</code>.</p>
+<section class="alert alert-success"><h3>
+Exercise 4
+</h3>
+<p>Call the following function in the REPL with your name.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">fn</span> [<span class="kw">name</span>] (<span class="kw">str</span> <span class="st">&quot;Welcome to Rivendell mr &quot;</span> <span class="kw">name</span>))</code></pre>
+This exercise does not give any points and you do not need to return it.
+</section>
+
+<p>Now we know how to make a function, but we only got a glimpse of it and then it was gone. We have to write the definition of the function every time we want to call it. But we want something more permanent, something that we can write once and call multiple times! The functions created with <code>fn</code> are called <em>anonymous functions</em>. They are called that because they have no name. To give a name to a function we can use <code>def</code>. Let’s give the greeter function a name right away.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">def</span><span class="fu"> hello </span>(<span class="kw">fn</span> [who] (<span class="kw">str</span> <span class="st">&quot;Hello, &quot;</span> who <span class="st">&quot;!&quot;</span>)))</code></pre>
+<p>That definition is also an expression, so don’t forget to evaluate it. Now we can call this function. Write <code>(hello &quot;beautiful&quot;)</code> in your REPL to get a instant compliment. In the name of sex-equality evaluate also <code>(hello &quot;handsome&quot;)</code>.</p>
+<p>So what just happened? Well, <code>def</code> gives a name to a value. In the previous case the value is what we get when we evaluate <code>(fn [who] (str &quot;Hello, &quot; who &quot;!&quot;))</code>. And what do we get when we evaluate that? A function. So we gave the name <code>hello</code> to a function that gives out greetings.</p>
+<section class="alert alert-success"><h3>
+Exercise 5
+</h3>
+<p>Give a name <code>answer</code> to the answer to life the universe and everything. This is the first exercise in which you need to modify the file <code>src/training_day.clj</code>. Remember to run the tests with <code>lein midje</code>.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">aswer <span class="co">;=&gt; 42</span></code></pre>
+</section>
+
+<p>Anonymous functions have their uses in functional programming. So it is nice to know that we can create them with <code>fn</code>. But most of the time we want to give the function a name right away. To make that a bit easier, we have <code>defn</code>. Here is how to create <em>and</em> name the previous function with <code>defn</code>. There is a running commentary alongside, to make sure we understand its parts.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">defn</span><span class="fu">                                 </span><span class="co">; Start a function definition:</span>
+  hello                               <span class="co">; name</span>
+  <span class="st">&quot;Gives out personalized greetings.&quot;</span> <span class="co">; a optional docstring</span>
+  [who]                               <span class="co">; parameters inside brackets</span>
+  (<span class="kw">str</span> <span class="st">&quot;Hello, &quot;</span> who <span class="st">&quot;!&quot;</span>))            <span class="co">; body</span></code></pre>
+<p>Here <code>hello</code> is the name of the function, <code>[who]</code> is the parameter list, and the expression on the second line is the body of the function. The return value of the function is the value of the last expression inside the function body. In this case, it is the value of the <code>(str &quot;Hello, &quot; who &quot;!&quot;)</code> expression. We have also provided an docstring that briefly tells what this function does. This is optional, but like washing your hands after visiting the toilet, highly recommended.</p>
+<p>For comparison, our function looks like this in Java:</p>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">/**</span>
+<span class="co"> * Gives out personalized greetings.</span>
+<span class="co"> */</span>
+String <span class="fu">hello</span>(String who) {
+    <span class="kw">return</span> <span class="st">&quot;Hello, &quot;</span> + who + <span class="st">&quot;!&quot;</span>;
+}</code></pre>
+<p>Note that in Clojure, there is no <code>return</code> keyword. The return value of a function is always the value of the last expression in the function body.</p>
+<section class="alert alert-info"><h3>
+Hint
+</h3>
+<p>Want to take a look at the docstring of some function? You can use the <code>doc</code> function to do so. Unfortunately you need to do some tricks to get your hands at this function. But don’t worry, it’s not difficult.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">user=&gt; (<span class="kw">use</span> &#39;clojure.<span class="kw">repl</span>)
+user=&gt; (<span class="kw">doc</span> <span class="kw">+</span>)
+-------------------------
+clojure.core/+
+([] [x] [x y] [x y &amp; more])
+  Returns the sum of nums. (<span class="kw">+</span>) returns <span class="dv">0</span>. Does <span class="kw">not</span> auto-promote
+  <span class="kw">longs</span>, will <span class="kw">throw</span> on overflow. See also: +&#39;
+nil</code></pre>
+<p>You can also see the docstring of our <code>hello</code> function. Evaluate the following in your REPL.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">use</span> &#39;clojure.<span class="kw">repl</span>)
+(<span class="kw">doc</span> hello)</code></pre>
+<p>You can also use <code>(user/clojuredocs function)</code> to see some examples for <code>function</code>. This should work for most of the built-in functions.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">user=&gt; (user/clojuredocs <span class="kw">min</span>)
+========== vvv Examples ================
+  user=&gt; (<span class="kw">min</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>)  
+  <span class="dv">1</span>
+  user=&gt; (<span class="kw">min</span> <span class="dv">5</span> <span class="dv">4</span> <span class="dv">3</span> <span class="dv">2</span> <span class="dv">1</span>)
+  <span class="dv">1</span>
+  user=&gt; (<span class="kw">min</span> <span class="dv">100</span>)
+  <span class="dv">100</span>
+========== ^^^ Examples ================
+<span class="dv">1</span> example found <span class="kw">for</span> clojure.core/min
+nil</code></pre>
+<p>The next section will tell you more about the function <code>use</code>.</p>
+</section>
+
+</section>
+<section id="files-and-namespaces" class="level2">
+<h2>Files and Namespaces</h2>
+<p>Code in Clojure projects is structured into namespaces defined in files. Usually each file corresponds to a one namespace identified by the file’s path. For an example, the file <code>foo/bar/baz.clj</code> could contain the namespace <code>foo.bar.baz</code>. This is slightly different from Java, where directories correspond to namespaces (packages) and files under a directory usually contain a single class in the given package.</p>
+<p>The repository that you cloned at the end of the last chapter contains an Leiningen project. Inside the <code>src</code> directory are all the code files of the project. The file <code>training_day.clj</code> should begin with the following.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">ns</span> training-day)</code></pre>
+<p>This is a namespace definition. It tells us that the code in this file is in the namespace <code>training-day</code>. There are no dots in the namespace name as there is no directories under <code>src</code>, just the lonely file <code>training_day.clj</code>.</p>
+<section class="alert alert-warning"><h3>
+Watch out!
+</h3>
+
+<p>See how the namespace is called <code>training-day</code>, but the file is <code>training_day.clj</code>? This is intentional. If a namespace name has an hyphen, the corresponding file name should have an underscore.</p>
+</section>
+
+<p>We are at cross roads. Choose to right set of instructions based on your REPL.</p>
+<section class="alert alert-info"><h3>
+Hint
+</h3>
+
+<section id="light-table-1" class="level4">
+<h4>Light Table</h4>
+<p>You need to first connect to the project <code>training-day</code>. When you then open an instarepl, LigthTable should ask you to which project you want to connect. Select <code>training-day</code>. Instructions for all this are in the <a href="basic-tools.html#editor">previous chapter</a>.</p>
+</section>
+<section id="lein-repl" class="level4">
+<h4>lein repl</h4>
+<p>Navigate to the directory <code>training-day</code>, and run <code>lein repl</code>.</p>
+</section> <!-- BUG in pandoc. This is required to forcefully close
+                the info section -->
+</section>
+
+<p>Now as you have your REPLs open, write the following in it.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(<span class="kw">use</span> &#39;training-day)
+hai</code></pre>
+<p>Were you greeted in all CAPS? If not, please raise your hand.</p>
+<p>What <code>use</code> did was that it looked inside the namespace <code>training-day</code> and brought with it all the names defined in that namespace. The name <code>hai</code> was one of them.</p>
+<section class="alert alert-warning"><h3>
+Watch out!
+</h3>
+<p>The <code>'</code> before the namespace name in a <code>use</code> is important. If you forget it, you will get an error like this:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">user=&gt; (<span class="kw">use</span> example.hello)
+java.lang.ClassNotFoundException: example.hello (NO_SOURCE_FILE<span class="kw">:1</span>)</code></pre>
+<code>'</code> is an alias for the <code>quote</code> special form, which we will talk more about later.
+</section>
+
+</section>
+</section>
+<section id="time-to-submit" class="level2">
+<h2>Time to submit</h2>
+<p>Here are two exercises more to keep your fingers warm.</p>
+<section class="alert alert-success"><h3>
+Exercise 6
+</h3>
+<p>Write the function <code>(square x)</code> that takes a number as a parameter and multiplies it with itself.</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(square <span class="dv">2</span>) <span class="co">;=&gt; 4</span>
+(square <span class="dv">3</span>) <span class="co">;=&gt; 9</span></code></pre>
+</section>
+
+<section class="alert alert-success"><h3>
+Exercise 7
+</h3>
+<p>Write the function <code>(average a b)</code>, which returns the average of its two parameters:</p>
+<pre class="sourceCode clojure"><code class="sourceCode clojure">(average <span class="dv">2</span> <span class="dv">4</span>) <span class="co">;=&gt; 3</span>
+(average <span class="dv">1</span> <span class="dv">2</span>) <span class="co">;=&gt; 3/2</span></code></pre>
+</section>
+
+<p>Now would be the time to submit your solutions to be graded. Run <code>lein midje</code> to see if all the tests pass. If the do, you should see the following:</p>
+<pre class="sh"><code>me@my-computer:~/training-day$ lein midje
+All claimed facts (5) have been confirmed.</code></pre>
+<p>Don’t worry if you haven’t figured out all the exercises. You can still submit those that you have successfully made. Here is how to do it.</p>
+<ol type="1">
+<li><p>Create a commit of your changes by running</p>
+<pre class="sh"><code>git commit -a -m &quot;message here&quot;</code></pre></li>
+<li><p>Update your fork in Github by pushing the changes. This will ask for your Github login.</p>
+<pre class="sh"><code>git push</code></pre></li>
+<li><p>Go to the Github page of <strong>your fork</strong> of the repository <code>training-day</code>. Click on the green <code>Compare &amp; review</code> button. When you are ready, click <code>Send pull request</code>.</p></li>
+</ol>
+<p>If you didn’t submit the solutions all at once, or some of the submited ones were incorrect, you can re-submit as many times as you need to. Just fix the code and follow the steps 1 and 2 again. When you push, the open pull request is updated.</p>
+<p><a href="I-am-a-horse-in-the-land-of-booleans.html">Proceed to the horse feast! →</a></p>
+</section>
+<footer>
+    <p>
+        &copy; iloveponies
+
+        <span style="float: right">
+            <a href="mailto:juhana.laurinharju@cs.helsinki.fi">questions?</a>
+        </span>
+    </p>
+</footer>
+</div>
+</div>
+</body>
+</html>
