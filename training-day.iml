@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module cursive.leiningen.project.LeiningenProjectsManager.displayName="training-day:1.0.0-SNAPSHOT" cursive.leiningen.project.LeiningenProjectsManager.isLeinModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dev-resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Leiningen: bultitude:0.1.7" level="project" />
+    <orderEntry type="library" name="Leiningen: classlojure:0.6.6" level="project" />
+    <orderEntry type="library" name="Leiningen: clojure-complete:0.2.4" level="project" />
+    <orderEntry type="library" name="Leiningen: colorize:0.1.1" level="project" />
+    <orderEntry type="library" name="Leiningen: com.cemerick/pomegranate:0.0.13" level="project" />
+    <orderEntry type="library" name="Leiningen: commons-codec:1.6" level="project" />
+    <orderEntry type="library" name="Leiningen: commons-io:2.0.1" level="project" />
+    <orderEntry type="library" name="Leiningen: commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Leiningen: gui-diff:0.3.9" level="project" />
+    <orderEntry type="library" name="Leiningen: iloveponies.tests/training-day:0.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Leiningen: joda-time:2.0" level="project" />
+    <orderEntry type="library" name="Leiningen: leiningen-core:2.0.0-preview10" level="project" />
+    <orderEntry type="library" name="Leiningen: midje-grader:0.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Leiningen: midje:1.5.1" level="project" />
+    <orderEntry type="library" name="Leiningen: ordered:1.2.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.httpcomponents/httpclient:4.1.2" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.httpcomponents/httpcore:4.1.2" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.maven.wagon/wagon-http-shared4:2.2" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.maven.wagon/wagon-http:2.2" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.maven.wagon/wagon-provider-api:2.2" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.maven/maven-aether-provider:3.0.4" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.maven/maven-model-builder:3.0.4" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.maven/maven-model:3.0.4" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.maven/maven-repository-metadata:3.0.4" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/algo.monads:0.1.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.5.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/core.incubator:0.1.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/core.unify:0.5.2" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/data.json:0.2.3" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/math.combinatorics:0.0.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.macro:0.1.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.namespace:0.2.2" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.12" level="project" />
+    <orderEntry type="library" name="Leiningen: org.codehaus.plexus/plexus-classworlds:2.4" level="project" />
+    <orderEntry type="library" name="Leiningen: org.codehaus.plexus/plexus-component-annotations:1.5.5" level="project" />
+    <orderEntry type="library" name="Leiningen: org.codehaus.plexus/plexus-interpolation:1.14" level="project" />
+    <orderEntry type="library" name="Leiningen: org.codehaus.plexus/plexus-utils:2.0.7" level="project" />
+    <orderEntry type="library" name="Leiningen: org.jsoup/jsoup:1.6.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.sonatype.aether/aether-api:1.13.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.sonatype.aether/aether-connector-file:1.13.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.sonatype.aether/aether-connector-wagon:1.13.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.sonatype.aether/aether-impl:1.13.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.sonatype.aether/aether-spi:1.13.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.sonatype.aether/aether-util:1.13.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.sonatype.sisu/sisu-guice:3.0.3:no_aop" level="project" />
+    <orderEntry type="library" name="Leiningen: org.sonatype.sisu/sisu-inject-bean:2.2.3" level="project" />
+    <orderEntry type="library" name="Leiningen: org.sonatype.sisu/sisu-inject-plexus:2.2.3" level="project" />
+    <orderEntry type="library" name="Leiningen: robert/hooke:1.1.2" level="project" />
+    <orderEntry type="library" name="Leiningen: slingshot:0.10.3" level="project" />
+    <orderEntry type="library" name="Leiningen: swiss-arrows:0.1.0" level="project" />
+    <orderEntry type="library" name="Leiningen: useful:0.8.3-alpha8" level="project" />
+    <orderEntry type="library" name="Leiningen: utilize:0.2.3" level="project" />
+  </component>
+</module>
