@@ -7,8 +7,6 @@
 (defn add [a b]
   (+ a b))
 
-(add 5 6)
-
 (defn square [x]
   (* x x))
 
