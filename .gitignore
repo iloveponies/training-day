@@ -8,3 +8,7 @@
 /checkouts
 /.lein-deps-sum
 /.lein-plugins
+
+# IDEA files
+training-day.iml
+.idea
