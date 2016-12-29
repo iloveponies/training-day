@@ -8,4 +8,5 @@
   (*' x x ))
 
 (defn average [a b]
- (quot (+' a b) 2)
+ (/ (+' a b) 2)
+)
