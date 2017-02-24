@@ -8,5 +8,7 @@
   (* x x))
 
 (defn average
-  ([a] a)
-  ([a b] (/ (+ a b) 2)))
+  ;([a] a)
+  ;([a b] (/ (+ a b) 2)))
+  ([& args] (/ (reduce + args) (count args))))
+
