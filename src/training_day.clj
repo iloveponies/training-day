@@ -1,6 +1,6 @@
 (ns training-day)
 
-(def answer (identity 42))
+(def answer (inc 41))
 
 (def hai "O HAI!")
 
