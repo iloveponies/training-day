@@ -1,0 +1,5 @@
+(use 'midje.repl)
+(load-facts 'iloveponies.tests.training-day 'training-day)
+(use 'training-day)
+(square 5)
+(average 5 2)
