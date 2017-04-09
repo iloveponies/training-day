@@ -2,7 +2,7 @@
 
 (def answer 42)
 
-(def hai "random")
+(def hai "O HAI!")
 
 (defn square [x]
   (* x x))
