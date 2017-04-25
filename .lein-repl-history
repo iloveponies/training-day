@@ -1,0 +1,19 @@
+(use 'training-day)
+(square 8)
+(answer)
+(answer )
+str (answer)
++ 3 4
+(+ 4 2)
+quir
+quit
+(use 'training-day)
+answer
+(answer)
+quit
+(use 'training-day.prj)
+(use 'i-am-a-horse-in-the-land-of-booleans)
+(teen? 2)
+(use 'i-am-a-horse-in-the-land-of-booleans)
+(teen? 2)
+quit
