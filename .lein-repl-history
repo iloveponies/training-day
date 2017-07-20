@@ -1,0 +1,12 @@
+answer
+(answer)
+(use training-day)
+(use training_day)
+(use workspace_clojure_helsinki_fi.iml)
+(use 'training_day)
+(use 'training-day)
+answer
+(use 'training-day')
+(use 'training-day)
+qut
+quit
