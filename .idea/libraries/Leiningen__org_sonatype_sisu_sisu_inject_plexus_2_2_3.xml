@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.sonatype.sisu/sisu-inject-plexus:2.2.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/sisu/sisu-inject-plexus/2.2.3/sisu-inject-plexus-2.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
