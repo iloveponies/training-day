@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1507820683263">{:repl-history {:ide [], :local [&quot;(+ 2 3)&quot; &quot;(use 'training-day)&quot; &quot;(square 7)&quot;], :remote []}}</component>
+</project>
