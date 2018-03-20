@@ -1,11 +1,17 @@
 (ns training-day)
 
-(def answer ":(")
+(def answer 42)
 
 (def hai "O HAI!")
 
-(defn square [x]
-  ":(")
+(defn
+  square
+  "Optionall comment"
+  [x]
+  (* x x))
 
-(defn average [a b]
-  ":(")
+(defn
+  average
+  "commnet slfjasfl jadfslk j"
+  [a b]
+  (/ (+ a b) 2))
