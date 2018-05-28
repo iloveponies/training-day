@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: midje:1.5.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/midje/midje/1.5.1/midje-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
