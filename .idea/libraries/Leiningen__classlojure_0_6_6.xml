@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: classlojure:0.6.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/classlojure/classlojure/0.6.6/classlojure-0.6.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
