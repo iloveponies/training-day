@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Clojure-1.9.0" type="Clojure">
+    <properties version="1.9.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/training/lib/core.specs.alpha-0.1.24.jar!/" />
+      <root url="jar://$PROJECT_DIR$/training/lib/spec.alpha-0.1.143.jar!/" />
+      <root url="jar://$PROJECT_DIR$/training/lib/clojure-1.9.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
