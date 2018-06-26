@@ -1,11 +1,19 @@
 (ns training-day)
 
-(def answer ":(")
+(def answer 42)
 
 (def hai "O HAI!")
 
-(defn square [x]
-  ":(")
+(defn
+  square
+  "This function receives on arg and multiplies it by itself"
+  [x]
+  (* x x))
 
-(defn average [a b]
-  ":(")
+
+(defn
+  average
+  "This function receives two args and returns the average between them"
+  [x y]
+  ( / ( + x y ) 2)) 
+  
