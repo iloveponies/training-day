@@ -1,0 +1,16 @@
+GET /service1-tenant1-*/content_item/_search
+{
+   "query" : {
+      "constant_score" : { 
+         "filter" : {
+            "bool" : {
+              "must" : [
+				 { "term" : {"_index" : ["service1-tenant1-ch1", service1-tenant1-ch2, service1-tenant1-ch3]}}, 	
+                 { "term" : {"contenttype" : "article"}}, 
+                 { "range" : {"createddate" : {le : "<today's date>"}}} 
+              ]
+           }
+         }
+      }
+   }
+}
