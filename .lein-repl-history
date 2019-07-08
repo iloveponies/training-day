@@ -1,0 +1,31 @@
+(square 3)
+(square 2)
+exit
+(square 3)
+exit
+(src 3)
+(square 3)
+exit
+(square 2)
+(load-file "src/training-day.clj")
+(load-file "training-day.clj")
+(load-file "src/training-day.clj")
+(load "src/training-day.clj")
+(use 'foo.bar)
+(use 'src.trainig-day)
+(use 'src.trainig_day)
+(load "src/training_day.clj")
+(load-file "src/training_day.clj")
+(square 3)
+(average 3 5)
+(load-file "src/training_day.clj")
+(square 3)
+(load-file "src/training_ay.clj")
+(load-file "src/training_day.clj")
+(training-day/square 3)
+(use 'training-day)
+(square 3)
+exit
+ (use 'training-day)
+(square 3)
+exit
