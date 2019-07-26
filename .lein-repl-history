@@ -1,0 +1,30 @@
+(+ 3 4)
+(str 31337)
+(str "Over " 9000 "!")
+(take 20 (cycle ["foo" "bar"]))
+(cycle ["foo" "bar"])
+(doc 'cycle)
+(doc cycle)
+(doc take)
+(get "Clojure" 2)
+(get "Clojure" )
+"Java".charAt(2)
+(fn [name] (str "Welcome to the Matrix mr " name))
+((fn [name] (str "Welcome to the Matrix mr " name) "vlad")
+)
+((fn [name] (str "Welcome to the Matrix mr " name)) "vlad")
+(defn 
+  hello
+  "Gives out personalized greetings."
+  [who]
+  (str "Hello, " who "!"))
+(hello "vlad")
+(doc +)
+(doc hello)
+(user/clojuredocs min)
+(user/clojuredocs )
+(user/clojuredocs hello)
+(user/clojuredocs range)
+(user/clojuredocs min)
+(use 'training-day)
+hai
