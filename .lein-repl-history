@@ -1,0 +1,25 @@
+(use 'training-day)
+(square 7)
+(+ (* 2 3) 4)
+(+  3 4 5 6)
++
+(get "Clojure" 2)
+(get "Clojure" 3)
+(get "abrakadabra" 0)
+(get "abrakadabra")
+(fn [who] (str "Hello, " who "!"))
+(who "lol")
+(who lol)
+((fn [who] (str "Hello, " who "!")) "Jani")
+((fn [name] (str "Welcome to Rivendell mr " name)), "tero")
+(def hello (fn [who] (str "Hello, " who "!")))
+hello tero
+hello "tero"
+(hello "tero")
+reload
+(answer)
+(answer )
+(use 'clojure.repl)
+(doc +)
+(use 'training-day)
+hai
