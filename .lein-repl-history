@@ -1,0 +1,12 @@
+(+ 4 (* 23))
+(+ 4 (* 2 3))
+(+ 3 4 5 6 )
+(get "Clojure" 2 )
+("Clojure" 2)
+ear 
+(def [who] (str "Hello, " who "!"))
+(fn [who] (str "Hello, " who "!"))
+who
+((fn [who] (str "hello ," who )) "jose" )
+exti
+exit
