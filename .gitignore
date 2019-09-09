@@ -8,3 +8,6 @@
 /checkouts
 /.lein-deps-sum
 /.lein-plugins
+src/training_day.clj
+.DS_Store
+.lein-repl-history
