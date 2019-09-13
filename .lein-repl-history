@@ -1,0 +1,22 @@
+(use 'training-day)
++ (* 2 3) 4
++ 4 (* 2 3) 
+(+ (* 2 3) 4)
+(+ 3 4 5 6)
++
+(get "abrakadabra" 1)
+(get "abrakadabra" 0)
+(fn [who] (str "Hello, " who "!"))
+((fn [who] (str "Hello, " who "!")) "Frans")
+(def hello (fn [who] (str "Hello, " who "!")))
+(hello "Frans")
+(use 'training-day)
+(answer)
+(answer )
+( answer )
+(hai)
+hai
+answer
+average 3 2
+square 2
+reload!
