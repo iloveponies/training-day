@@ -1,0 +1,7 @@
+;; Anything you type in here will be executed
+;; immediately with the results shown on the
+;; righ
+
+(use 'training-day)
+
+(square 2)
