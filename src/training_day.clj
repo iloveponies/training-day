@@ -1,11 +1,12 @@
 (ns training-day)
 
-(def answer ":(")
+(def answer 42)
 
-(def hai "O HAI!")
+(def hai (fn [] (str "O HAI!")))
 
-(defn square [x]
-  ":(")
+(def square (fn [x]
+  (* x x)))
 
-(defn average [a b]
-  ":(")
+(def average (fn [a b]
+  (/ (+ a b) 2)))
+
