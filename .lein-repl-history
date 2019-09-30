@@ -1,0 +1,32 @@
+(+ 1 4)
+(+ 1 6)
+(+ 2 3)
+(* 42 7)
+(- 2 (* 78 35))
+(+ 1 2 3 4)
+(+ 4 (* 2 3))
+(+ 3 4 5 6)
++
+(get "abrakadabra" 0)
+(fn [who] (str "Hello, " who "!"))
+((fn [who] (str "Hello, " who "!")) "Jani")
+(fn [name] (str "Welcom to Rivedenll mr " name))
+((fn [name] (str "Welcom to Rivedenll mr " name)) "Jason")
+(def hello (fn [who] (str "Hello, " who "!")))
+(hello "beautiful")
+(hello "handsome")
+(defn
+hello
+"Gives out personalized greetings."
+[who]
+(str "Hello, " who "!"))
+(use 'clojure.repl)
+(doc +)
+(doc hello)
+(clojuredocs min)
+(user/clojuredocs min)
+(user training-day)
+(use training-day)
+(use 'training-day)
+answer
+(square 3)
