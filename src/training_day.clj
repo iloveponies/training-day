@@ -1,11 +1,17 @@
 (ns training-day)
 
-(def answer ":(")
+(def answer 42)
 
 (def hai "O HAI!")
 
-(defn square [x]
-  ":(")
+(defn
+  square
+  "Gives out the square of a number."
+  [x]
+  (* x x))
 
-(defn average [a b]
-  ":(")
+(defn
+  average
+  "Gives out the average of two numbers."
+  [a b]
+  (/ (+ a b) 2))
