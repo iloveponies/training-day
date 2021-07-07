@@ -1,0 +1,11 @@
+(use 'training-day)
+hai
+lein midje
+(square 4)
+(use 'training-day)
+(square 4)
+lein stop
+quit
+(use 'training-day)
+(square 4)
+quit
