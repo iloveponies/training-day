@@ -1,0 +1,36 @@
+(+ 1 2)
+(+ 3 4)
+(+ 3 4) ;=> 7
+(str 1337)
+(str 1337 123)
+(take 20 (cycle ["foo" "bar"])
+)
++
+-
+fn
+(get you 2)
+(get "you" 2)
+(get 'you' 2)
+(get 'you' 0)
+(get "you" 0)
+(get "you" 1)
+(get "you" 3)
+(fn [who] (str "Hello, " who "!"))
+(fn [who] (str "Hello, " who "!")) fn
+((fn [who] (str "Hello, " who "!")) "Jani")
+((fn [who] (str "Hello, " who "!")) "Niko")
+((def hello [who] (str "Hello, " who "!")) "Niko")
+def hello [who] (str "Hello, " who "!"))
+def hello [who] (str "Hello, " who "!")
+(use training-day)
+(use 'training-day)
+hai
+(use 'training-day)
+(use training-day)
+(use 'training-day)
+(use 'training-day) hai
+square 2
+(average 2 4)
+(use 'training-day)
+(average 2 4)
+(average 1 2)
