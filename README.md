@@ -6,4 +6,4 @@ I'm part of the [120 hour epic sax marathon](http://iloveponies.github.com/120-h
 
 ## Usage
 
-Make a fork of me!
+This is a fork of code from the Functional programming in Clojure MOOC (http://mooc.fi/courses/2014/clojure/). The original repo is found here: http://iloveponies.github.io/120-hour-epic-sax-marathon/I-am-a-horse-in-the-land-of-booleans.html
