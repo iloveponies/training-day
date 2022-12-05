@@ -5,16 +5,9 @@
 (def hai "O HAI!")
 
 (defn square [x]
+  "something squre"
   (* x x))
 
 (defn average [a b]
+  "average"
   (/ (+ a b) 2))
-
-(+ 4 (* 2 3))
-
-(+ 3 4 5 6)
-
-(get "abrakadabra" 0)
-
-((fn [name] (str "Welcome to Rivendell Mr. " name)) "Adrift")
-
