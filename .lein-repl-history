@@ -1,0 +1,6 @@
+lein midje
+quit
+(fn [name] (str "Welcome to Rivendell mr " name))
+(+ 1 1)
+(fn [name] (str "Welcome to Rivendell mr " name) println name)
+quit
