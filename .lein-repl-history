@@ -1,0 +1,13 @@
+(use 'training-day)
+(use training-day)
+(use "training-day")
+lein repl
+exit
+hai
+(use 'training-day)
+hai
+(use'training-day) average 2 3
+hai
+(average 3 4)
+lein midje
+exit
