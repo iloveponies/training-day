@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.apache.maven/maven-model:3.0.4">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.0.4/maven-model-3.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
