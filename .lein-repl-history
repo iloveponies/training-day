@@ -1,0 +1,7 @@
+(square 7)
+(use 'training-day')
+Instarepl: Open a clojure instarepl
+(* 2 2)
+(use 'training-day')
+(use 'training-day)
+(square 7)
