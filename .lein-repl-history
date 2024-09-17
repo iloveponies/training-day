@@ -1,0 +1,5 @@
+(HAI)
+(hai)
+(use 'training-day)
+hai
+lein midje
