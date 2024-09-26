@@ -1,0 +1,14 @@
+(+(* 2 3) 4)
+(+ 3 4 5 6)
++
+(get "abrakadabra" 0)
+(fn [who] (str "Hello, " who "!"))
+(fn [who] (str "Hello, " who "!") "MLS")
+((fn [who] (str "Hello, " who "!")) "MLS")
+((fn [name] (str "Welcome to Rivendell mr " name)) "MLS")
+(use 'clojure.repl)
+(doc hello)
+(doc +)
+(user/clojuredocs min)
+(use 'training-day)
+hai
