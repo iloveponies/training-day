@@ -1,0 +1,6 @@
+Iå 
+(+ 1 2)
+(get "abrakadabra" 2)
+(quit)
+(use 'training-day)
+(quit)
