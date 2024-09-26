@@ -1,11 +1,29 @@
 (ns training-day)
 
-(def answer ":(")
+(defn                                 ; Start a function definition:
+  hello                               ; name
+  "Gives out personalized greetings." ; a optional docstring
+  [who]                               ; parameters inside brackets
+  (str "Hello, " who "!"))            ; body
 
-(def hai "O HAI!")
+(def
+  answer
+  42)
 
-(defn square [x]
-  ":(")
+(def
+  hai
+  "O HAI!")
 
-(defn average [a b]
-  ":(")
+(defn
+  square
+  "Returns the square of the parameter."
+  [x]
+  (* x x))
+
+(defn
+  average
+  "Returns the average of two parameters."
+  [a b]
+  (/ (+ a b) 2))
+
+
