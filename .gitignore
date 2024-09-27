@@ -5,6 +5,7 @@
 /native
 /target
 /.lein-failures
+/.lein-repl-history
 /checkouts
 /.lein-deps-sum
 /.lein-plugins
